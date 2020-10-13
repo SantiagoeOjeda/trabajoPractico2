@@ -1,0 +1,21 @@
+@import "style.css";
+
+h1{
+    margin-left: 34px;
+}
+ul{
+    list-style: none;
+}
+div ul li{
+    font-size: 25;
+    font-family: fantasy;
+    color: rgb(34, 31, 31);
+}
+div a{
+    position: relative;
+    left: 34px;
+}
+div form{
+    position: relative;
+    left: 34px;
+}

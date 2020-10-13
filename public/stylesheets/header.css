@@ -1,0 +1,26 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgb(28, 122, 122);
+  }
+  header p{
+    padding: 30px 0px 0px 41px;
+    color: white;
+    font-family: sans-serif;
+  }
+  header{
+    background-color: gray;
+  }
+  
+  nav ul{
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    left: 77px;
+    bottom: 508px;
+  }

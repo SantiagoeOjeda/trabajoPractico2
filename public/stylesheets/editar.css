@@ -1,0 +1,20 @@
+@import "style.css";
+
+h1{
+    margin-left: 34px;
+}
+form{
+    padding: 0 38px 0px 38px;
+}
+div{
+    padding: 10px 0 10px 0px;
+}
+form label{
+    display: block;
+    padding-bottom: 5px;
+    font-size: larger;
+    color: gray;
+}
+form input{
+    width: 100%;
+}

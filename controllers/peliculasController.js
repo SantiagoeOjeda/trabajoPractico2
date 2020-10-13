@@ -6,13 +6,13 @@ let peliculasController = {
     lista: function(req, res){
         db.Pelicula.findAll()
             .then(function(peliculas){
-                res.render('listadoPeliculas', {peliculas:peliculas})
+                res.render('listadoPeliculas', {peliculas:peliculas, css: 'listado.css'})
             })
     },
     crear: function(req, res){
         db.Genero.findAll()
             .then(function(generos){
-                return res.render('crearPeliculas', {generos : generos})
+                return res.render('crearPeliculas', {generos : generos, css: "crear.css"})
             })
     },
     subir: function(req, res){
@@ -32,7 +32,7 @@ let peliculasController = {
             include: [{association: 'genero'}, {association: 'actores'}]
         })
             .then(function(pelicula){
-                res.render('detallePelicula', {pelicula:pelicula})
+                res.render('detallePelicula', {pelicula:pelicula, css: "detalle.css"})
             })
     },
     editar: function(req, res){
@@ -42,7 +42,7 @@ let peliculasController = {
 
         Promise.all([pedidoPelicula, pedidoGeneros])
             .then(function([pelicula, generos]){
-                res.render('editarPelicula', {pelicula:pelicula, generos:generos})
+                res.render('editarPelicula', {pelicula:pelicula, generos:generos, css: "editar.css"})
             })
     },
     actualizar: function(req, res){

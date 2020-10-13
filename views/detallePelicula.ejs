@@ -1,7 +1,7 @@
 <%- include('header') -%>
-
+<div>
 <h1><%= pelicula.title %> </h1>
-
+ 
 <ul>
     <li>
         Duracion: <%= pelicula.length %> 
@@ -33,5 +33,5 @@
 <form action="/movies/eliminar/<%= pelicula.id %>?_method=DELETE" method="POST">
     <button type="submit">Eliminar</button>
 </form>
-
+</div>
 <%- include('footer') -%>
